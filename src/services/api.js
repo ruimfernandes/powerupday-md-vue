@@ -1,5 +1,8 @@
-// import { get, snakeCase } from 'lodash';
-import { get, head, values } from 'lodash';
+import {
+  get,
+  head,
+  values
+} from 'lodash';
 import normalize from 'json-api-normalizer';
 import constants, {
   killSwitchStatus,
@@ -116,6 +119,7 @@ const authenticate = async (email, password) => {
 }
 
 export {
+  apiToken,
   authenticate,
   signIn
 };
